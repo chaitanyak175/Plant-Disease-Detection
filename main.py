@@ -1,12 +1,6 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-import os
-
-image_path = "home_page.jpeg"
-st.write("Current working directory:", os.getcwd())
-st.write("File exists:", os.path.isfile(image_path))
-st.image(image_path, use_column_width=True)
 
 # Tensorflow Model Prediction
 def model_prediction(test_image):
@@ -24,8 +18,8 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 # Main Page
 if app_mode == "Home":
     st.header("PLANT DISEASE RECOGNITION SYSTEM")
-    image_path = "home_page.jpeg"
-    st.image(image_path, use_column_width=True)
+    #image_path = "home_page.jpeg"
+    #st.image(image_path, use_column_width=True)
     st.markdown("""
     Welcome to the Plant Disease Recognition System! 🌿🔍
 
