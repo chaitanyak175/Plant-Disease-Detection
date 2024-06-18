@@ -1,6 +1,12 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+import os
+
+image_path = "home_page.jpeg"
+st.write("Current working directory:", os.getcwd())
+st.write("File exists:", os.path.isfile(image_path))
+st.image(image_path, use_column_width=True)
 
 # Tensorflow Model Prediction
 def model_prediction(test_image):
